@@ -7,7 +7,7 @@ app.use(cookieParser());
 // Set cookie across all subdomains of example.com
 app.get("/set-cookie", (req, res) => {
   res.cookie("token", "sainapints toke", {
-    // domain: ".example.com", // enables sharing across subdomains
+     domain: ".onrender.com", // enables sharing across subdomains
     path: "/",
     httpOnly: true,
     secure: true, // set to true if using HTTPS
